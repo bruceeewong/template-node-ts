@@ -1,0 +1,37 @@
+{
+  "name": "template-node-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "cz": "cz",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "prettier": "prettier --write --ignore-unknown .",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Bruski <bruskiwang@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.0.0",
+    "prettier": "^2.3.2"
+  },
+  "lint-staged": {
+    "*.js": "npm run lint:fix",
+    "*.{js,md,json}": "npm run prettier"
+  }
+}
