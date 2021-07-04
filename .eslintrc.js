@@ -1,4 +1,6 @@
 module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
   env: {
     commonjs: true,
     es2021: true,
@@ -7,6 +9,7 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "plugin:jest/recommended",
   ],
@@ -16,5 +19,5 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
   },
-  plugins: ["prettier", "jest"],
+  plugins: ["@typescript-eslint", "prettier", "jest"],
 };
