@@ -1,14 +1,13 @@
 {
-  "name": "template-node-ts",
+  "name": "<%= name %>",
   "version": "1.0.0",
-  "description": "A template for Node TypeScript project which equipped with modern lints and formatters",
-  "private": "true",
+  "description": "",
   "keywords": [
     "nodejs"
   ],
-  "author": "Bruski <bruskiwang@outlook.com>",
+  "author": "<%= author %>",
   "license": "ISC",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "scripts": {
     "start": "nodemon",
     "test": "jest",
